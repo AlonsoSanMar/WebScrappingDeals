@@ -1,4 +1,4 @@
-# Web Scrapping Deals
+# Web Scrapping Deals -- In Development
 
 Este código realiza web scrapping de eshopPrices, y de ahi obtenemos las ofertas.
 
