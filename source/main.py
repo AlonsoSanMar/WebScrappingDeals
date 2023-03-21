@@ -4,16 +4,7 @@ import time
 import pyautogui
 import pywhatkit
 import keyboard as k
-
-def mensaje(nombres, precio, metacritic):
-    msg = "DESCUENTOS...\n"
-    for p in zip(nombres, precio, metacritic):
-        msg += p[0].text.lstrip().rstrip() + "\n"
-        msg += p[1].text.replace('\n',' ').lstrip() + "\n"
-        msg += p[2].text.replace('\n','') + "\n"
-        msg += "---------------------------\n"
-    return msg
-
+import msg as mensaje
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
 html_text = requests.get('https://eshop-prices.com/games/popular?currency=MXN', headers=headers).text
