@@ -28,7 +28,7 @@ msg = mensaje(nombres, precio, metacritic)
     
 #Mandamos a whatsapp
 # syntax: phone number with country code, message, hour and minutes
-pywhatkit.sendwhatmsg_to_group_instantly('+527731169798', msg, 12, 48)
+pywhatkit.sendwhatmsg_to_group_instantly('number', msg, 12, 48)
 
 #Aquí acomodo el raton para que de click automaticamente
 pyautogui.click(1050, 950)
